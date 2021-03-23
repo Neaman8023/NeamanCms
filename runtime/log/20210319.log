@@ -1,0 +1,248 @@
+---------------------------------------------------------------
+
+[2021-03-19T13:42:21+08:00] 127.0.0.1 POST zhanghan.net/index.php/csmmeet/building/add.html?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001048s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.042128s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_building` (`name` , `weigh` , `description` , `status` , `create_time` , `update_time`) VALUES ('4' , 44 , '4' , 1 , 1616132541 , 1616132541) [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.031409s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (1 , 1 , '提示语:新增成功！' , '/index.php/csmmeet/building/add.html?dialog=1' , '127.0.0.1' , 1616132541) [ RunTime:0.000602s ]
+---------------------------------------------------------------
+
+[2021-03-19T13:42:23+08:00] 127.0.0.1 GET zhanghan.net/index.php/csmmeet/building/index.html?page=1&limit=10
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000940s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.036593s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_building` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` ORDER BY `weigh` DESC [ RunTime:0.000833s ]
+---------------------------------------------------------------
+
+[2021-03-19T13:43:57+08:00] 127.0.0.1 POST zhanghan.net/index.php/csmmeet/building/add.html?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001679s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.068005s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (1 , 0 , '提示语:大楼名称只能是汉字' , '/index.php/csmmeet/building/add.html?dialog=1' , '127.0.0.1' , 1616132637) [ RunTime:0.001817s ]
+---------------------------------------------------------------
+
+[2021-03-19T13:44:04+08:00] 127.0.0.1 GET zhanghan.net/index.php/csmmeet/building/del.html?ids=13
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001339s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.040826s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 13 [ RunTime:0.000648s ]
+[ sql ] [ SQL ] DELETE FROM `yzn_building` WHERE  `id` = 13 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.042610s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (1 , 1 , '提示语:操作成功！' , '/index.php/csmmeet/building/del.html?ids=13' , '127.0.0.1' , 1616132644) [ RunTime:0.000828s ]
+---------------------------------------------------------------
+
+[2021-03-19T13:44:07+08:00] 127.0.0.1 GET zhanghan.net/index.php/csmmeet/building/del.html?ids=15
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000982s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.047466s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 15 [ RunTime:0.000609s ]
+[ sql ] [ SQL ] DELETE FROM `yzn_building` WHERE  `id` = 15 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.040815s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (1 , 1 , '提示语:操作成功！' , '/index.php/csmmeet/building/del.html?ids=15' , '127.0.0.1' , 1616132647) [ RunTime:0.000609s ]
+---------------------------------------------------------------
+
+[2021-03-19T13:44:10+08:00] 127.0.0.1 GET zhanghan.net/index.php/csmmeet/building/del.html?ids=20
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001280s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.042799s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 20 [ RunTime:0.000644s ]
+[ sql ] [ SQL ] DELETE FROM `yzn_building` WHERE  `id` = 20 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.039669s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (1 , 1 , '提示语:操作成功！' , '/index.php/csmmeet/building/del.html?ids=20' , '127.0.0.1' , 1616132650) [ RunTime:0.000764s ]
+---------------------------------------------------------------
+
+[2021-03-19T13:44:12+08:00] 127.0.0.1 GET zhanghan.net/index.php/csmmeet/building/del.html?ids=19
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001086s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.046393s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 19 [ RunTime:0.000687s ]
+[ sql ] [ SQL ] DELETE FROM `yzn_building` WHERE  `id` = 19 [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.036799s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (1 , 1 , '提示语:操作成功！' , '/index.php/csmmeet/building/del.html?ids=19' , '127.0.0.1' , 1616132652) [ RunTime:0.000419s ]
+---------------------------------------------------------------
+
+[2021-03-19T13:44:14+08:00] 127.0.0.1 GET zhanghan.net/index.php/csmmeet/building/del.html?ids=18
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001067s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.042161s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 18 [ RunTime:0.002246s ]
+[ sql ] [ SQL ] DELETE FROM `yzn_building` WHERE  `id` = 18 [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.040434s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (1 , 1 , '提示语:操作成功！' , '/index.php/csmmeet/building/del.html?ids=18' , '127.0.0.1' , 1616132654) [ RunTime:0.000615s ]
+---------------------------------------------------------------
+
+[2021-03-19T13:44:17+08:00] 127.0.0.1 GET zhanghan.net/index.php/csmmeet/building/del.html?ids=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001254s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.039359s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 16 [ RunTime:0.000811s ]
+[ sql ] [ SQL ] DELETE FROM `yzn_building` WHERE  `id` = 16 [ RunTime:0.001674s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.035800s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (1 , 1 , '提示语:操作成功！' , '/index.php/csmmeet/building/del.html?ids=16' , '127.0.0.1' , 1616132657) [ RunTime:0.000510s ]
+---------------------------------------------------------------
+
+[2021-03-19T13:44:19+08:00] 127.0.0.1 GET zhanghan.net/index.php/csmmeet/building/del.html?ids=17
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001166s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.041794s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 17 [ RunTime:0.000817s ]
+[ sql ] [ SQL ] DELETE FROM `yzn_building` WHERE  `id` = 17 [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.033609s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (1 , 1 , '提示语:操作成功！' , '/index.php/csmmeet/building/del.html?ids=17' , '127.0.0.1' , 1616132659) [ RunTime:0.000440s ]
+---------------------------------------------------------------
+
+[2021-03-19T13:51:24+08:00] 127.0.0.1 GET zhanghan.net/index.php/csmmeet/building/edit.html?id=9&dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001312s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.048153s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000562s ]
+[ error ] [0]致命错误: Call to undefined function __()
+---------------------------------------------------------------
+
+[2021-03-19T13:54:23+08:00] 127.0.0.1 GET zhanghan.net/index.php/csmmeet/building/edit.html?id=9&dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000990s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.039468s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.002284s ]
+[ error ] [8]未定义变量: data
+---------------------------------------------------------------
+
+[2021-03-19T13:57:52+08:00] 127.0.0.1 GET zhanghan.net/index.php/csmmeet/building/edit.html?id=9&dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001288s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.050858s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000764s ]
+---------------------------------------------------------------
+
+[2021-03-19T14:02:16+08:00] 127.0.0.1 GET zhanghan.net/index.php/csmmeet/building/edit.html?id=9&dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000896s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.044334s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000514s ]
+---------------------------------------------------------------
+
+[2021-03-19T14:02:20+08:00] 127.0.0.1 GET zhanghan.net/index.php/csmmeet/building/edit.html?id=9&dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001161s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.051490s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000750s ]
+---------------------------------------------------------------
+
+[2021-03-19T14:02:24+08:00] 127.0.0.1 POST zhanghan.net/index.php/csmmeet/building/edit.html?id=9&dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001371s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.045553s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000534s ]
+[ error ] [8]Undefined property: app\csmmeet\controller\Building::$excludeFields
+[ error ] [8]Undefined property: app\csmmeet\controller\Building::$excludeFields
+[ error ] [0]method not exist:app\csmmeet\model\Building->validateFailException
+---------------------------------------------------------------
+
+[2021-03-19T14:04:03+08:00] 127.0.0.1 POST zhanghan.net/index.php/csmmeet/building/edit.html?id=9&dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001026s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.036449s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000695s ]
+[ error ] [8]Undefined property: app\csmmeet\controller\Building::$excludeFields
+[ error ] [8]Undefined property: app\csmmeet\controller\Building::$excludeFields
+[ error ] [0]method not exist:app\csmmeet\model\Building->validateFailException
+---------------------------------------------------------------
+
+[2021-03-19T14:04:08+08:00] 127.0.0.1 GET zhanghan.net/index.php/csmmeet/building/edit.html?id=9&dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001124s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.046738s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000792s ]
+---------------------------------------------------------------
+
+[2021-03-19T14:04:11+08:00] 127.0.0.1 POST zhanghan.net/index.php/csmmeet/building/edit.html?id=9&dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001131s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.039722s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000723s ]
+[ error ] [8]Undefined property: app\csmmeet\controller\Building::$excludeFields
+[ error ] [8]Undefined property: app\csmmeet\controller\Building::$excludeFields
+[ error ] [0]method not exist:app\csmmeet\model\Building->validateFailException
+---------------------------------------------------------------
+
+[2021-03-19T14:04:48+08:00] 127.0.0.1 POST zhanghan.net/index.php/csmmeet/building/edit.html?id=9&dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000869s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.034543s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000631s ]
+[ error ] [8]Undefined property: app\csmmeet\controller\Building::$excludeFields
+[ error ] [8]Undefined property: app\csmmeet\controller\Building::$excludeFields
+[ error ] [0]method not exist:app\csmmeet\model\Building->validateFailException
+---------------------------------------------------------------
+
+[2021-03-19T14:04:52+08:00] 127.0.0.1 GET zhanghan.net/index.php/admin/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001643s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_menu` [ RunTime:0.042691s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 0  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 3  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001841s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 10  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.003598s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 11  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001494s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 27  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 24  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000914s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 25  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.002578s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 26  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001512s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 13  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 14  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.002445s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 28  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001541s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 29  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001037s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 30  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000953s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 31  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001184s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 23  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001458s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 32  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.002414s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 33  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 15  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 16  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 18  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 19  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 21  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.003016s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 17  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.002257s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 22  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001456s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 48  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 49  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 50  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 51  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001325s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 20  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 12  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 225  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 226  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 227  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.002695s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 232  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 237  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.003237s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 241  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 242  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001512s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 243  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.002495s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 256  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001005s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 262  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 263  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001105s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 264  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 272  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.004110s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 4  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001107s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 43  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001031s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 44  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001153s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 52  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001007s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 53  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001513s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 54  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 45  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001807s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 5  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 38  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000970s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 39  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 55  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 56  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 57  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000921s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 58  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 59  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000714s ]
+---------------------------------------------------------------
+
+[2021-03-19T14:04:53+08:00] 127.0.0.1 GET zhanghan.net/index.php/admin/main/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001070s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SELECT VERSION() as version [ RunTime:0.000601s ]
+---------------------------------------------------------------
+
+[2021-03-19T14:04:57+08:00] 127.0.0.1 GET zhanghan.net/index.php/csmmeet/building/index.html?page=1&limit=10
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000851s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.064294s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_building` [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` ORDER BY `weigh` DESC [ RunTime:0.000750s ]
+---------------------------------------------------------------
+
+[2021-03-19T14:04:58+08:00] 127.0.0.1 GET zhanghan.net/index.php/csmmeet/building/edit.html?id=9&dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001201s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.040572s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000807s ]
+---------------------------------------------------------------
+
+[2021-03-19T14:05:02+08:00] 127.0.0.1 POST zhanghan.net/index.php/csmmeet/building/edit.html?id=9&dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002255s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_building` [ RunTime:0.039488s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_building` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000923s ]
+[ error ] [8]Undefined property: app\csmmeet\controller\Building::$excludeFields
+[ error ] [8]Undefined property: app\csmmeet\controller\Building::$excludeFields
+[ error ] [0]method not exist:app\csmmeet\model\Building->validateFailException

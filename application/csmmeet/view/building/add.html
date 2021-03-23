@@ -1,0 +1,46 @@
+{extend name="admin@index_layout"/}
+{block name="main"}
+<form class="layui-form" method="post">
+    <div class="layui-form-item">
+        <label class="layui-form-label">大楼名称</label>
+        <div class="layui-input-inline">
+            <input type="text" name="name" lay-verify="required" autocomplete="off" placeholder="模型名称" class="layui-input">
+        </div>
+        <div class="layui-form-mid layui-word-aux">大楼中文名称，用于添加会议时选择使用。</div>
+    </div>
+     <div class="layui-form-item">
+        <label class="layui-form-label">排序</label>
+        <div class="layui-input-inline">
+            <input type="text" name="weigh" lay-verify="required" autocomplete="off" placeholder="模型名称" class="layui-input">
+        </div>
+        <div class="layui-form-mid layui-word-aux">显示顺序。</div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">备注</label>
+        <div class="layui-input-inline w300">
+            <textarea name="description" placeholder="模型的相关描述" class="layui-textarea"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">状态</label>
+        <div class="layui-input-inline">
+            <input type="radio" name="status" value="1" title="正常" checked>
+            <input type="radio" name="status" value="0" title="禁止">
+        </div>
+    </div>
+    <div class="layui-form-item layer-footer">
+        <div class="layui-input-block">
+            <button class="layui-btn" lay-submit>立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+</form>
+{/block}
+{block name="script"}
+<script type="text/javascript">
+layui.use('yznForm', function() {
+    var yznForm = layui.yznForm;
+    yznForm.listen();
+});
+</script>
+{/block}

@@ -1,0 +1,91 @@
+---------------------------------------------------------------
+
+[2021-03-23T08:10:41+08:00] 127.0.0.1 GET zhanghan.net/index.php/admin/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.047467s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.242768s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.051654s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.102492s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (0 , 0 , '提示语:请先登陆' , '/index.php/admin/' , '127.0.0.1' , 1616458241) [ RunTime:0.010082s ]
+---------------------------------------------------------------
+
+[2021-03-23T09:41:42+08:00] 127.0.0.1 POST zhanghan.net/index.php/admin/index/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001426s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.048705s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (0 , 0 , '提示语:验证码错误!' , '/index.php/admin/index/login.html' , '127.0.0.1' , 1616463702) [ RunTime:0.000553s ]
+---------------------------------------------------------------
+
+[2021-03-23T09:41:58+08:00] 127.0.0.1 POST zhanghan.net/index.php/admin/index/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004212s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.051059s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.003120s ]
+[ sql ] [ SQL ] UPDATE `yzn_admin`  SET `last_login_time` = 1616463718 , `token` = '0df72839-780b-4039-8cf0-7d68e28a8365'  WHERE  `id` = 1 [ RunTime:0.003478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.056448s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (1 , 1 , '提示语:恭喜您，登陆成功' , '/index.php/admin/index/login.html' , '127.0.0.1' , 1616463718) [ RunTime:0.000451s ]
+---------------------------------------------------------------
+
+[2021-03-23T09:42:00+08:00] 127.0.0.1 GET zhanghan.net/index.php/admin/index/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008648s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_menu` [ RunTime:0.104359s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 0  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.006651s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 3  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000849s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 10  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000997s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 11  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001663s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 27  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001087s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 24  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000838s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 25  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.002647s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 26  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 13  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 14  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001210s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 28  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.003761s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 29  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 30  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 31  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000991s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 23  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001314s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 32  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 33  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 15  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 16  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.005276s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 18  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.002926s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 19  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 21  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 17  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.002791s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 22  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.002389s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 48  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 49  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 50  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.003105s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 51  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 20  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000960s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 12  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001087s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 225  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.003231s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 226  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001698s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 227  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 232  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 237  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 241  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 242  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001016s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 243  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 256  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 262  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 263  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 264  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 272  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001693s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 4  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 43  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000952s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 44  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 52  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 53  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001424s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 54  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 45  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 5  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 38  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 39  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 55  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.002218s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 56  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 57  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 58  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 59  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000895s ]
+---------------------------------------------------------------
+
+[2021-03-23T09:42:00+08:00] 127.0.0.1 GET zhanghan.net/index.php/admin/main/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001779s ] mysql:host=127.0.0.1;dbname=neaman;charset=utf8
+[ sql ] [ SQL ] SELECT VERSION() as version [ RunTime:0.003690s ]
