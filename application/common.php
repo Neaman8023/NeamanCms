@@ -12,7 +12,6 @@ use think\facade\Config;
 use think\facade\Request;
 use think\facade\Url;
 use think\Loader;
-use think\Lang;
 
 !defined('DS') && define('DS', DIRECTORY_SEPARATOR);
 // 插件目录

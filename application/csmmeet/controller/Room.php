@@ -1,12 +1,13 @@
 <?php
 // +----------------------------------------------------------------------
 // Csmmeet [ CSMMeet会议室预约系统 ]
-// Author: chensm <chenshiming0802@163.com>
-// Create by chensm at 2020-02-26
+// Author: Neaman
+// Create by chensm at 2021-03-23
 // +----------------------------------------------------------------------
-namespace app\admin\controller\csmmeet;
+namespace app\csmmeet\controller;
 
 use app\common\controller\Adminbase;
+use app\csmmeet\model\Room as ModelRoom;
 
 /**
  * 会议室
@@ -19,16 +20,16 @@ class Room extends Adminbase
     /**
      * Room模型对象
      *
-     * @var \app\admin\model\csmmeet\Room
+     * @var \app\csmmeet\model\Room
      */
-    protected $model = null;
+    protected $modelClass= null;
 
-    public function _initialize()
+    public function initialize()
     {
-        parent::_initialize();
-        $this->model = new \app\admin\model\csmmeet\Room();
-        $this->view->assign("needauditList", $this->model->getNeedauditList());
-        $this->view->assign("statusList", $this->model->getStatusList());
+        parent::initialize();
+        $this->modelClass= new ModelRoom();
+        $this->view->assign("needauditList", $this->modelClass->getNeedauditList());
+        $this->view->assign("statusList", $this->modelClass->getStatusList());
     }
 
     /**
@@ -41,21 +42,25 @@ class Room extends Adminbase
      */
     public function index()
     {
+        
+        dump($this->modelClass->getNeedauditList());exit();
         // 设置过滤方法
+        
         $this->request->filter([
             'strip_tags'
         ]);
+  
         if ($this->request->isAjax()) {
             // 如果发送的来源是Selectpage，则转发到Selectpage
             if ($this->request->request('keyField')) {
                 return $this->selectpage();
             }
             list ($where, $sort, $order, $offset, $limit) = $this->buildparams();
-            $total = $this->model->where($where)
+            $total = $this->modelClass->where($where)
                 ->order($sort, $order)
                 ->count();
 
-            $list = $this->model->alias("t")
+                $list = $this->modelClass->alias("t")
                 ->field('t.*,t1.name buildingname')
                 ->where($where)
                 ->join('csmmeet_building t1', 't1.id=t.csmmeet_building_id')

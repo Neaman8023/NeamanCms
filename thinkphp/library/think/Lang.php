@@ -168,7 +168,7 @@ class Lang
 
         $key   = strtolower($name);
         $value = isset($this->lang[$range][$key]) ? $this->lang[$range][$key] : $name;
-
+       
         // 变量解析
         if (!empty($vars) && is_array($vars)) {
             /**
@@ -189,7 +189,7 @@ class Lang
                 $value = str_replace($replace, $vars, $value);
             }
         }
-
+       
         return $value;
     }
 

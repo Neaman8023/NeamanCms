@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'Needaudit y'                                           =>'测试',
     'User id'                                               => '会员ID',
     'Username'                                              => '用户名',
     'Nickname'                                              => '昵称',

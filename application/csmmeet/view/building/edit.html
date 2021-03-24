@@ -11,21 +11,21 @@
      <div class="layui-form-item">
         <label class="layui-form-label">排序</label>
         <div class="layui-input-inline">
-            <input type="text" name="weigh" lay-verify="required" autocomplete="off" placeholder="模型名称" class="layui-input">
+            <input type="text" name="weigh" value={$row.weigh} lay-verify="required" autocomplete="off" placeholder="模型名称" class="layui-input">
         </div>
         <div class="layui-form-mid layui-word-aux">显示顺序。</div>
     </div>
     <div class="layui-form-item">
         <label class="layui-form-label">备注</label>
         <div class="layui-input-inline w300">
-            <textarea name="description" placeholder="模型的相关描述" class="layui-textarea"></textarea>
+            <textarea name="description"  placeholder="模型的相关描述" class="layui-textarea">{$row.description}</textarea>
         </div>
     </div>
     <div class="layui-form-item">
         <label class="layui-form-label">状态</label>
         <div class="layui-input-inline">
-            <input type="radio" name="status" value="1" title="正常" checked>
-            <input type="radio" name="status" value="0" title="禁止">
+            <input type="radio" name="status" value="1" title="正常" {if $row.status==1} checked {/if}>
+            <input type="radio" name="status" value="0" title="禁止" {if $row.status==0} checked {/if}>
         </div>
     </div>
     <div class="layui-form-item layer-footer">

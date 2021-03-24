@@ -149,7 +149,7 @@ trait Curd
                     $this->error($e->getMessage());
                 }
                 if ($result !== false) {
-                    $this->success();
+                    $this->success('修改成功');
                 } else {
                     $this->error('No rows were updated');
                 }

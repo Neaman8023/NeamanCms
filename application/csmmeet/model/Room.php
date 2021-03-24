@@ -1,6 +1,6 @@
 <?php
 
-namespace app\admin\model\csmmeet;
+namespace app\csmmeet\model;
 
 use think\Model;
 
@@ -41,7 +41,7 @@ class Room extends Model
     
     public function getNeedauditList()
     {
-        return ['Y' => __('Needaudit y'), 'N' => __('Needaudit n')];
+        return ['Y' => __("User id"), 'N' => __('Needaudit n')];
     }
 
     public function getStatusList()

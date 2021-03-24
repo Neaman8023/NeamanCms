@@ -10,7 +10,6 @@ namespace app\csmmeet\controller;
 
 use app\common\controller\Adminbase;
 use app\csmmeet\model\Building as ModelBuilding;
-use think\Db;
 
 
 /**
